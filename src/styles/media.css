@@ -1,0 +1,670 @@
+/* ===== TABLET (768px - 1024px) ===== */
+@media (max-width: 1024px) {
+  .sidebar {
+    padding: 2rem;
+  }
+
+  .brand h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-card {
+    width: 240px;
+    height: 280px;
+  }
+
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  .grid-tile-title {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .grid-tile:hover .grid-tile-title {
+    letter-spacing: 3px;
+  }
+}
+/* ================================================================
+   MOBILE UI/UX ENHANCEMENT - CSS ONLY
+   Target: 375px - 768px (iPhone 12, 13, 14, etc.)
+   Focus: Spacing, Typography, Touch Targets, Visual Hierarchy
+   ================================================================ */
+
+/* ===== MOBILE BASE ADJUSTMENTS (≤768px) ===== */
+@media (max-width: 768px) {
+  
+  /* ===== BODY & ROOT ===== */
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ===== APP CONTAINER ===== */
+  .app {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    width: 100%;
+  }
+
+  .app-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* ===== SIDEBAR SECTION ===== */
+  .sidebar {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem 3rem;
+    overflow: visible;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .sidebar::after {
+    display: none;
+  }
+
+  /* Brand - Better Spacing */
+  .brand {
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+
+  .brand::before {
+    display: none;
+  }
+
+  .brand h1 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /* Profile Card - Centered & Breathable */
+  .profile-card {
+    width: 240px;
+    height: 280px;
+    margin-bottom: 2rem;
+  }
+
+  .profile-image {
+    transform: rotate(0deg);
+    border-width: 2px;
+  }
+
+  .placeholder-icon {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+  }
+
+  .placeholder-icon::before {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Profile Info - Enhanced Typography */
+  .profile-info {
+    margin-bottom: 2.5rem;
+  }
+
+  .profile-name {
+    font-size: 1.75rem;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  .profile-role {
+    font-size: 0.875rem;
+    letter-spacing: 2.5px;
+    line-height: 1.4;
+  }
+
+  /* Social Links - Touch-Friendly */
+  .social-links {
+    margin-top: auto;
+    margin-bottom: 0;
+    gap: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+
+  /* ===== MAIN CONTENT AREA ===== */
+  .main-content {
+    width: 100%;
+    min-height: auto;
+  }
+
+  /* ===== MOBILE SECTIONS FLOW ===== */
+  .mobile-sections-flow {
+    display: block;
+  }
+
+  .mobile-sections-flow > div {
+
+    padding: 3.5rem 1.75rem;
+    scroll-margin-top: 0;
+  }
+
+  .mobile-sections-flow > div:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Section Titles - Mobile Optimized */
+  .mobile-sections-flow [data-title]::before {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);text-align: center;
+  }
+
+  .mobile-sections-flow .about-section::before {
+    content: 'ABOUT ME';
+  }
+
+  .mobile-sections-flow .services-section::before {
+    content: 'MY SERVICES';
+  }
+
+  .mobile-sections-flow .career-section::before {
+    content: 'MY CAREER';
+  }
+
+  .mobile-sections-flow .portfolio-section::before {
+    content: 'MY PORTFOLIO';
+  }
+
+  .mobile-sections-flow .clients-section::before {
+    content: 'MY CLIENTS';
+  }
+
+  .mobile-sections-flow .contact-section::before {
+    content: 'CONTACT ME';
+  }
+
+  /* ===== TYPOGRAPHY HIERARCHY ===== */
+  
+  /* Body Text - Optimal Readability */
+  .intro-text,
+  .section-description {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+
+  /* Subsection Titles */
+  .subsection-title {
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+  }
+
+  /* Card Content Text */
+  .service-card p,
+  .project-card p,
+  .timeline-item p {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+  }
+
+  .service-card h3,
+  .project-card h3,
+  .timeline-item h3 {
+    font-size: 1.125rem;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 0.875rem;
+  }
+
+  /* ===== INFO CARDS - IMPROVED LAYOUT ===== */
+  .info-grid {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .info-card {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
+    border-left-width: 3px;
+    border-radius: 8px;
+  }
+
+  .info-label {
+    min-width: auto;
+    font-size: 0.8125rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+  }
+
+  .info-value {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  /* ===== BUTTONS - TOUCH-OPTIMIZED ===== */
+  .button-group {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9375rem;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    padding: 1rem 1.5rem;
+  }
+
+  .btn-secondary {
+    border-width: 1.5px;
+  }
+
+  /* Back Button - Hidden on Mobile Flow */
+  .btn-back {
+    display: none;
+  }
+
+  /* ===== TECH STACK - CENTERED & BREATHABLE ===== */
+  .tech-stack-section {
+    margin-top: 2.5rem;
+  }
+
+  .tech-stack {
+    gap: 0.875rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+
+  .tech-item {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    border-width: 1.5px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ===== SERVICE CARDS - IMPROVED SPACING ===== */
+  .services-grid {
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .service-card {
+    padding: 1.75rem 1.5rem;
+    border-radius: 12px;
+    border-width: 1.5px;
+  }
+
+  .service-card h3 {
+    margin-bottom: 1rem;
+  }
+
+  /* ===== TIMELINE - ENHANCED READABILITY ===== */
+  .timeline {
+    margin-top: 2rem;
+  }
+
+  .timeline-item {
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 1.25rem;
+    border-left-width: 3px;
+    border-radius: 10px;
+  }
+
+  .timeline-date {
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .timeline-item h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  /* ===== PROJECT CARDS - BALANCED LAYOUT ===== */
+  .projects-grid {
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .project-card {
+    padding: 1.75rem 1.5rem;
+    border-radius: 12px;
+    border-width: 1.5px;
+  }
+
+  .project-card h3 {
+    margin-bottom: 1rem;
+  }
+
+  .project-card p {
+    margin-bottom: 1rem;
+  }
+
+  .project-tech {
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  /* ===== CLIENT ITEMS - STACKED LAYOUT ===== */
+  .clients-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .client-item {
+    padding: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 12px;
+    border-width: 1.5px;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* ===== CONTACT FORM - TOUCH-FRIENDLY ===== */
+  .contact-form {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 12px;
+    border-width: 1.5px;
+    min-height: 48px;
+  }
+
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    font-size: 0.9375rem;
+    letter-spacing: 0.3px;
+  }
+
+  .form-textarea {
+    min-height: 160px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .contact-form .btn-primary {
+    margin-top: 0.5rem;
+  }
+
+  /* ===== SCROLLBAR - MOBILE OPTIMIZED ===== */
+  .sidebar::-webkit-scrollbar,
+  .main-content::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .sidebar::-webkit-scrollbar-track,
+  .main-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb,
+  .main-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+  }
+
+  /* ===== VISUAL REFINEMENTS ===== */
+  
+  /* Subtle shadow enhancement for depth */
+  .info-card,
+  .service-card,
+  .project-card,
+  .timeline-item,
+  .client-item {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Improved hover states for touch */
+  .info-card:active,
+  .service-card:active,
+  .project-card:active,
+  .timeline-item:active,
+  .client-item:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn:active {
+    transform: scale(0.97);
+  }
+
+  .social-icon:active {
+    transform: scale(0.95);
+  }
+
+  .tech-item:active {
+    transform: scale(0.96);
+  }
+}
+
+/* ===== SMALL MOBILE REFINEMENTS (≤480px) ===== */
+@media (max-width: 480px) {
+  
+  /* Tighter padding for very small screens */
+  .sidebar {
+    padding: 3.5rem 1.5rem 2.5rem;
+  }
+
+  .mobile-sections-flow > div {
+    padding: 3rem 1.5rem;
+  }
+
+  /* Typography adjustments */
+  .brand h1 {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+  }
+
+  .mobile-sections-flow [data-title]::before {
+    font-size: 1.75rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.75rem;
+  }
+
+  .profile-name {
+    font-size: 1.625rem;
+  }
+
+  .profile-role {
+    font-size: 0.8125rem;
+    letter-spacing: 2px;
+  }
+
+  /* Smaller profile card */
+  .profile-card {
+    width: 200px;
+    height: 240px;
+  }
+
+  .placeholder-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .placeholder-icon::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Compact spacing */
+  .info-grid {
+    gap: 0.875rem;
+  }
+
+  .info-card {
+    padding: 1.125rem 1rem;
+  }
+
+  .service-card,
+  .project-card,
+  .timeline-item {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .client-item {
+    padding: 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  /* Button adjustments */
+  .btn {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.875rem;
+    min-height: 46px;
+  }
+
+  /* Tech stack */
+  .tech-item {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.8125rem;
+    min-height: 38px;
+  }
+
+  /* Form elements */
+  .form-input,
+  .form-textarea {
+    padding: 0.875rem 1rem;
+    font-size: 0.9375rem;
+    min-height: 46px;
+  }
+
+  .form-textarea {
+    min-height: 140px;
+  }
+
+
+}
+
+/* ===== EXTRA SMALL DEVICES (≤375px - iPhone SE, 12 Mini) ===== */
+@media (max-width: 375px) {
+  
+  .sidebar {
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  .mobile-sections-flow > div {
+    padding: 2.75rem 1.25rem;
+  }
+
+  .brand h1 {
+    font-size: 1.625rem;
+    letter-spacing: 2.5px;
+  }
+
+  .mobile-sections-flow [data-title]::before {
+    font-size: 1.625rem;
+    letter-spacing: 1.25px;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-card {
+    width: 180px;
+    height: 220px;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .intro-text,
+  .section-description {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .service-card,
+  .project-card,
+  .timeline-item {
+    padding: 1.25rem 1rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.8125rem;
+    min-height: 44px;
+  }
+
+  .tech-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    min-height: 36px;
+  }
+}
+
+/* ===== LANDSCAPE OPTIMIZATION ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+  
+  .sidebar {
+    min-height: auto;
+    padding: 2.5rem 2rem;
+  }
+
+  .mobile-sections-flow > div {
+    min-height: auto;
+    padding: 2.5rem 2rem;
+  }
+
+  .profile-card {
+    width: 180px;
+    height: 220px;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-info {
+    margin-bottom: 1.5rem;
+  }
+
+  .social-links {
+    margin-top: 1.5rem;
+  }
+}

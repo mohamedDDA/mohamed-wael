@@ -18,10 +18,20 @@ const About = () => {
         <InfoCard label="Email" value="mohammed.wael.eng@gmail.com" />
         <InfoCard label="Phone" value="+20 1099 45 2977" />
       </div>
-
+{/* 
       <div className="button-group">
-        <Button variant="primary">Download Resume</Button>
-          </div>
+        <Button
+          variant="primary"
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/resume.pdf";
+            link.download = "Mohamed_Wael_Resume.pdf";
+            link.click();
+          }}
+        >
+          Download Resume
+        </Button>
+      </div> */}
 
       <div className="tech-stack-section">
         <h3 className="subsection-title">Tech Stack</h3>

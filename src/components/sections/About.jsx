@@ -18,7 +18,7 @@ const About = () => {
         <InfoCard label="Email" value="mohammed.wael.eng@gmail.com" />
         <InfoCard label="Phone" value="+20 1099 45 2977" />
       </div>
-{/* 
+
       <div className="button-group">
         <Button
           variant="primary"
@@ -31,7 +31,7 @@ const About = () => {
         >
           Download Resume
         </Button>
-      </div> */}
+      </div>
 
       <div className="tech-stack-section">
         <h3 className="subsection-title">Tech Stack</h3>

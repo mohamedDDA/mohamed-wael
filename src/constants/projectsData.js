@@ -36,40 +36,40 @@ export const PROJECTS = [
     mockType: "ecommerce",
   },
 
-  // {
-  //   id: 4,
-  //   title: "Yamen",
-  //   description:
-  //     "Professional real estate website for Yamen company in Saudi Arabia, showcasing property listings, company profile, and contact features with a clean modern layout.",
-  //   image: "/images/yamen.png",
-  //   tags: ["React", "Real Estate", "Responsive", "UI Design", "Control Panel"],
-  //   liveUrl: "https://yamen.vercel.app/",
-  //   githubUrl: "",
-  //   featured: false,
-  //   mockType: "realestate",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Abarhail",
-  //   description:
-  //     "Corporate website for Abarhail water brand based in Saudi Arabia, presenting products, brand identity, and company information with a clean and refreshing design.",
-  //   image: "/images/abar.png",
-  //   tags: ["React", "Branding", "Corporate", "Responsive", "Control Panel"],
-  //   liveUrl: "https://www.abarhail.com/",
-  //   githubUrl: "",
-  //   featured: false,
-  //   mockType: "product",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Alsaif Law",
-  //   description:
-  //     "Professional website for Alsaif law office, highlighting legal services, company profile, and contact information with a formal and modern user interface.",
-  //   image: "/images/alsaif.png",
-  //   tags: ["React", "Corporate", "Legal", "Responsive"],
-  //   liveUrl: "https://www.alsaiflaw.co/",
-  //   githubUrl: "",
-  //   featured: false,
-  //   mockType: "agency",
-  // },
+  {
+    id: 4,
+    title: "Yamen",
+    description:
+      "Professional real estate website for Yamen company in Saudi Arabia, showcasing property listings, company profile, and contact features with a clean modern layout.",
+    image: "/images/yamen.png",
+    tags: ["React", "Real Estate", "Responsive", "UI Design", "Control Panel"],
+    liveUrl: "https://yamen.vercel.app/",
+    githubUrl: "",
+    featured: false,
+    mockType: "realestate",
+  },
+  {
+    id: 5,
+    title: "Abarhail",
+    description:
+      "Corporate website for Abarhail water brand based in Saudi Arabia, presenting products, brand identity, and company information with a clean and refreshing design.",
+    image: "/images/abar.png",
+    tags: ["React", "Branding", "Corporate", "Responsive", "Control Panel"],
+    liveUrl: "https://www.abarhail.com/",
+    githubUrl: "",
+    featured: false,
+    mockType: "product",
+  },
+  {
+    id: 6,
+    title: "Alsaif Law",
+    description:
+      "Professional website for Alsaif law office, highlighting legal services, company profile, and contact information with a formal and modern user interface.",
+    image: "/images/alsaif.png",
+    tags: ["React", "Corporate", "Legal", "Responsive"],
+    liveUrl: "https://www.alsaiflaw.co/",
+    githubUrl: "",
+    featured: false,
+    mockType: "agency",
+  },
 ];

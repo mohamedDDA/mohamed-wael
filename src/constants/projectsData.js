@@ -72,4 +72,16 @@ export const PROJECTS = [
     featured: false,
     mockType: "agency",
   },
+  {
+    id: 7,
+    title: "Rhoul",
+    description:
+      "A professional corporate website for a Saudi company specializing in premium corporate gifts, showcasing its identity, services, portfolio, and commitment to quality and excellence.",
+    image: "/images/rhoul.png",
+    tags: ["React", "Corporate", "E-commerce", "Responsive"],
+    liveUrl: "https://www.rhoul.sa/",
+    githubUrl: "",
+    featured: false,
+    mockType: "agency",
+  },
 ];

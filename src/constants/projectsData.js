@@ -35,19 +35,6 @@ export const PROJECTS = [
     featured: false,
     mockType: "ecommerce",
   },
-
-  {
-    id: 4,
-    title: "Yamen",
-    description:
-      "Professional real estate website for Yamen company in Saudi Arabia, showcasing property listings, company profile, and contact features with a clean modern layout.",
-    image: "/images/yamen.png",
-    tags: ["React", "Real Estate", "Responsive", "UI Design", "Control Panel"],
-    liveUrl: "https://yamen.vercel.app/",
-    githubUrl: "",
-    featured: false,
-    mockType: "realestate",
-  },
   {
     id: 5,
     title: "Abarhail",
